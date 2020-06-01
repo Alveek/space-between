@@ -1,0 +1,172 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background: black !important;
+}
+
+.game-title {
+  color: rgb(214, 75, 105);
+  text-align: center;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  text-shadow: 1px 1px 3px rgb(98, 0, 255);
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 4px solid rgb(45, 7, 70);
+  display: grid;
+  align-content: end;
+  background: url("https://media.giphy.com/media/3o75248xZ4uXdJbHbi/giphy.gif");
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 25px rgb(0, 119, 255);
+}
+
+.info {
+  font-size: 14px;
+  width: 90%;
+  margin: auto;
+  color: white;
+  /* text-align: justify; */
+}
+
+.info-top {
+  position: absolute;
+  top: 22px;
+  left: 30px;
+}
+
+.info-bottom {
+  position: absolute;
+  bottom: 22px;
+  left: 30px;
+}
+
+.info-more {
+  font-size: 10px;
+  color: #bbb;
+}
+
+#btn {
+  margin-top: 14px;
+  padding: 8px 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  width: 100%;
+  height: 100px;
+}
+
+.asteroid-box {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 97px));
+}
+
+.ship-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+}
+
+.asteroid {
+  width: 90px;
+  height: 90px;
+  background: center / contain no-repeat
+    url("https://i.ibb.co/c6p7VgW/asteroid-1.png");
+  z-index: 1;
+  transform: scale(0.8);
+}
+
+.ship {
+  width: 100px;
+  height: 100px;
+  background: center / contain no-repeat
+    url("https://i.ibb.co/fYs2pJr/spaceship-1.png");
+}
+
+#user-input {
+  margin-top: 10px;
+  width: calc(100% - 8px);
+  text-align: center;
+  font-size: 20px;
+  box-shadow: inset 0px 0px 15px rgba(0, 255, 13, 0.842);
+}
+
+input[type="text"]:disabled::placeholder {
+  color: transparent;
+}
+
+.play-again-page {
+  /* margin: 40% auto; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  width: 100%;
+}
+
+#play-again-btn {
+  margin-top: 30px;
+}
+
+.hp {
+  margin-top: 10px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.stats-level {
+  height: 20px;
+  color: rgb(214, 75, 105);
+  font-weight: bold;
+}
+
+.nes-input.is-dark {
+  border: 4px solid #2d0746 !important;
+  border-radius: 6px;
+  color: #108de0 !important;
+  text-transform: uppercase;
+}
+
+.credits {
+  margin-top: 90px;
+}
+
+.credits h3 {
+  margin-bottom: 20px;
+  letter-spacing: 8px;
+  color: rgb(0, 119, 255);
+  text-shadow: 1px 1px 3px rgb(214, 75, 105);
+}
+
+.credits p {
+  font-size: 14px;
+}

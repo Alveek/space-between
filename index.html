@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Space Between</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/nes.css@2.2.1/css/nes.min.css"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1 class="game-title">Space Between</h1>
+      <div class="container">
+        <p class="info info-top">
+          Вы управляете космическими кораблями. Ваша задача избежать
+          столкновения с астероидами. Используйте команды "start", "end",
+          "center", "space-between" и "space-evenly", чтобы изменить позиции
+          кораб&shy;лей.
+        </p>
+        <p class="info info-bottom">
+          Поле ввода имеет автофокус. После ввода команды нажмите Enter.
+          <br />
+          <span class="info-more"
+            >Узнайте больше о свойстве "justify-content" в CSS Grid на
+            <a
+              href="https://css-tricks.com/snippets/css/complete-guide-grid/#prop-justify-content"
+              target="_blank"
+              >css-tricks.com</a
+            ></span
+          >
+        </p>
+        <button class="nes-btn is-success" id="btn">Старт</button>
+      </div>
+
+      <div class="stats">
+        <div class="hp">
+          <i class="nes-icon heart"></i>
+          <i class="nes-icon heart"></i>
+          <i class="nes-icon heart"></i>
+        </div>
+
+        <div class="stats-level">
+          <p>
+            УРОВЕНЬ: <span class="stats-level-output">0</span> /
+            <span class="levels-length-output"></span>
+          </p>
+        </div>
+      </div>
+
+      <input
+        id="user-input"
+        class="nes-input is-dark"
+        type="text"
+        autocomplete="off"
+        disabled
+        placeholder="введите команду..."
+      />
+    </div>
+  </body>
+</html>
