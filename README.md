@@ -1,6 +1,6 @@
 ## Мини CSS игра
 
-<img src="https://github.com/Alveek/space-between/blob/master/sb.gif" width="500px" />
+<img src="https://github.com/Alveek/space-between/blob/master/sb.gif" width="80%" />
 
 Игра, в которой можно попрактиковать CSS Grid/Flex свойство justify-content.
 
